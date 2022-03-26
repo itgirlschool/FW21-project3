@@ -27,19 +27,27 @@
         }
 
         .swiper {
-
-            height: fit-content;
             max-width: 100%;
+            height: 100%;
+            margin: auto;
             padding: 2em;
-            margin: 2em;
 
         }
 
+
         .swiper-slide {
-            justify-content: center;
-            display: grid;
-            align-items: center;
             object-fit: contain;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
         }
 
         .swiper-slide img {
@@ -48,9 +56,10 @@
             max-width: 100%;
 
         }
+
         .button__buy {
             background-color: transparent;
-            padding: 0.5em;
+            padding: 0.5em 2em;
             border-color: black;
             max-width: 100%;
             text-transform: uppercase;
@@ -70,6 +79,23 @@
         .swiper-button-next {
             color: #000;
         }
+        .swiper-button-prev {
+            color: black;
+        }
+
+        .product-info {
+            padding: 0.5em;
+        }
+        .promo-container {
+            display: grid;
+            grid-template-areas: "promo-image promo-product";
+            justify-content: center;
+            gap: 5em;
+        }
+        .promo-product {
+        padding: 4em;
+            margin-top: 2em;
+        }
     </style>
     <script src="https://kit.fontawesome.com/222937a9c3.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -78,7 +104,7 @@
 <body>
 <!-- Slider -->
 <section>
-    <div class="swiper mySwiper container">
+    <div class="swiper mySwiper">
         <div class="swiper-wrapper content">
             <div class="swiper-slide card">
                 <div class="card-content">
@@ -88,7 +114,7 @@
 
                     <div class="product-info">
                         <span class="brand">CeraVe</span>
-                        <span class="profession">
+                        <span class="description">
                         pack crème CeraVe<br>
                         8 FL 02/ 736 mL<br>
                         40000 FCFA
@@ -109,7 +135,7 @@
 
                     <div class="product-info">
                         <span class="brand">CeraVe</span>
-                        <span class="profession">
+                        <span class="description">
                     pack crème CeraVe<br>
                     8 FL 02/ 736 mL<br>
                     40000 FCFA
@@ -133,7 +159,7 @@
 
                     <div class="product-info">
                         <span class="brand">CeraVe</span>
-                        <span class="profession">
+                        <span class="description">
                     pack crème CeraVe<br>
                     8 FL 02/ 736 mL<br>
                     40000 FCFA<br>
@@ -148,7 +174,8 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide card"><div class="card-content">
+            <div class="swiper-slide card">
+                <div class="card-content">
                 <div class="image">
                     <img src="img/feature-product-1%20(2).png" alt="">
                 </div>
@@ -156,36 +183,61 @@
 
                 <div class="product-info">
                     <span class="brand">CeraVe</span>
-                    <span class="profession">
+                    <span class="description">
                             pack crème CeraVe<br>
                             8 FL 02/ 736 mL<br>
                             40000 FCFA
                 </span>
                 </div>
-
-
-
                 <div class="button">
                     <i class="fas fa-shopping-cart"></i>
                     <button class="button__buy">Commander</button>
                 </div>
             </div>
+
             </div>
         </div>
     </div>
 </section>
 <div class="swiper-button-next"></div>
 <div class="swiper-button-prev"></div>
+<section>
+    <div class="promo-container">
+        <div class="promo-img">
+        <img src="img/product-video.png" alt="Promo Product">
+        </div>
+        <div class="swiper-slide card">
+            <div class="card-content promo-product">
+                <div class="image">
+                    <img src="img/feature-product-1%20(3).png" alt="">
+                </div>
 
+
+                <div class="product-info">
+                    <span class="brand">CeraVe</span>
+                    <span class="description">
+                            pack crème CeraVe<br>
+                            8 FL 02/ 736 mL<br>
+                            40000 FCFA
+                </span>
+                </div>
+                <div class="button">
+                    <i class="fas fa-shopping-cart"></i>
+                    <button class="button__buy">Commander</button>
+                </div>
+            </div>
+    </div>
+    </div>
+</section>
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
+
         slidesPerView: 4,
-        spaceBetween: 50,
+        spaceBetween: 30,
         slidesPerGroup: 4,
         loop: true,
         loopFillGroupWithBlank: true,
-
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
