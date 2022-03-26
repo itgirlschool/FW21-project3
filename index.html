@@ -116,13 +116,13 @@
 <!--PromoSection-->
 <section>
     <div class="promo-container">
-        <div class="promo-img">
-        <img src="img/product-video.png" alt="Promo Product">
+        <div class="promo-image">
+        <img id="promo-img" src="img/product-video.png" alt="Promo Product">
         </div>
         <div class="swiper-slide card">
             <div class="card-content promo-product">
                 <div class="promo-text"><h2>PROFITEZ DES PACKS DE PRODUITS</h2></div>
-                <div class="image">
+                <div class="image" >
                     <img src="img/feature-product-1%20(3).png" alt="">
                 </div>
                 <div class="product-info">
@@ -146,10 +146,30 @@
     var swiper = new Swiper(".mySwiper", {
 
         slidesPerView: 4,
-        spaceBetween: 50,
+        spaceBetween: 30,
         slidesPerGroup: 4,
         loop: true,
-
+        breakpoints: {
+            // when window width is >= 320px
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            // when window width is >= px
+            750: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            // when window width is >= 640px
+            1066: {
+                slidesPerView: 4,
+                spaceBetween: 40
+            }
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
