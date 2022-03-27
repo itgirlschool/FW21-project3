@@ -97,3 +97,150 @@ body {
     margin: 2em;
 }
 
+.footer{
+    display: grid;
+    grid-template-rows: 3fr 3fr 3fr 1fr ;
+    width: 100%;
+height: 30%;
+background-color: #000;
+}
+.first_line{
+    grid-row: 1/4;
+    grid-column: 1/1;
+
+}
+.second_line {
+    grid-row: 3/4;
+    grid-column: 1/1;
+}
+
+.forth_line{
+    grid-row: 4/4;
+    grid-column: 1/1;
+
+}
+.second_line{
+    grid-row: 2/4;
+    grid-column: 1/1;
+}
+.first_line {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    
+
+
+}
+.second_line{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 10vh;
+}
+
+.suivez{
+    grid-row: 1/1;
+    grid-column: 1/4;
+    padding-left: 10vh;
+}
+
+.confidentilite{
+    grid-row: 1/1;
+    grid-column: 2/4;
+    padding-left: 10vh;
+}
+
+.conditions{
+    grid-row: 3/1;
+    grid-column: 3/4;
+    text-align: center;
+}
+
+.contacts {
+    grid-row: 1/1;
+    grid-column: 4/4;
+    text-align: left;
+}
+
+.forth_line{
+    display: grid;
+    grid-template-rows: 1fr;
+    text-align: center;
+    font-family: Candara, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+}
+.faq{
+    grid-row: 1/1;
+    grid-column: 1/5;
+    padding-left: 10vh;
+    padding-top: 10vh;
+    
+}
+.paiement{
+    grid-row: 1/1;
+    grid-column: 2/5;
+    padding-top: 10vh;
+
+}
+.logo_footer{
+    grid-row: 1/1;
+    grid-column: 3/5;
+
+
+}
+.button_footer {
+    grid-row: 1/1;
+    grid-column: 5/5;
+    margin-top: 5vh;
+    text-align: left;
+}
+
+.news{
+    grid-row: 1/1;
+    grid-column: 4/5;
+    padding-top: 10vh;
+
+}
+
+.faq,.paiement,.news, .button_footer, .suivez, .contacts, .conditions, .confidentilite {
+    font-family: Candara, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+
+}
+#logo_footer{ 
+    position: absolute;
+    left: 43%;
+    
+}
+img{
+    max-width: 100%;
+}
+.button_footer{
+    background-color: transparent;
+    Width:200px;
+    Height:40px;
+    border-color: rgb(255, 255, 255);
+
+}
+#mail{
+    padding-left: 20px;
+}
+
+.lang{
+text-decoration: underline;
+text-align: right;
+padding-right: 10vh;
+}
+
+.inst{
+    width: 31px;
+    height: 31px;
+}
+
+.inst, .logo_contacts{
+    padding-right: 18px;
+    padding-top: 18px;
+}
