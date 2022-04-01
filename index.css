@@ -271,7 +271,7 @@ a {
     display: inline-block;
     margin: 1.4em 1em 1em 1em;
 }
-@media screen and (max-width: 1023px) and (min-width: 375px) {
+@media screen and (max-width: 1023px) and (min-width: 360px) {
     .promo-container {
         display: grid;
         grid-template-areas: "promo-image"
