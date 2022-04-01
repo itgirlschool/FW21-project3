@@ -14,18 +14,15 @@
 
 <body>
 <!--Замени header своим-->
-<header class="header">
-    <div class="nav-area1">
-        <img class="logo" src="#" alt="">
+<header class="site-header">
+    <div class="site-identity">
+        <h1><a href="#">Site Name</a></h1>
     </div>
-    <nav>
-        <ul class="nav-area">
-            <li style="text-decoration: underline;"><a href="#">products</a></li>
-            <li><a href="#">story</a></li>
-            <li><a href="#">manufacturing</a></li>
-            <li><a href="#">packaging</a></li>
-            <li><img class="icons" src="#" alt="#"></li>
-            <li><img class="icons" src="#" alt="#"></li>
+    <nav class="site-navigation">
+        <ul class="nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -42,7 +39,6 @@
                             <img src="img/bioderma-atoderm-routine-gevoelige-droge-huid-gel-douche-1l-plus-creme-500ml%201.png"
                                 alt="">
                         </div>
-
                         <div class="product-info">
                             <span class="brand">CeraVe</span>
                             <span class="description">
@@ -62,8 +58,6 @@
                         <div class="image">
                             <img src="img/feature-product-1.png" alt="">
                         </div>
-
-
                         <div class="product-info">
                             <span class="brand">CeraVe</span>
                             <span class="description">
@@ -72,8 +66,6 @@
                                 40000 FCFA
                             </span>
                         </div>
-
-
                         <div class="button">
                             <i class="fas fa-shopping-cart"></i>
                             <button class="button__buy">Commander</button>
@@ -85,9 +77,6 @@
                         <div class="image">
                             <img src="img/feature-product-1%20(1).png" alt="">
                         </div>
-
-
-
                         <div class="product-info">
                             <span class="brand">CeraVe</span>
                             <span class="description">
@@ -96,9 +85,6 @@
                                 40000 FCFA<br>
                             </span>
                         </div>
-
-
-
                         <div class="button">
                             <i class="fas fa-shopping-cart"></i>
                             <button class="button__buy">Commander</button>
@@ -110,8 +96,6 @@
                         <div class="image">
                             <img src="img/feature-product-1%20(2).png" alt="">
                         </div>
-
-
                         <div class="product-info">
                             <span class="brand">CeraVe</span>
                             <span class="description">
@@ -138,12 +122,13 @@
             <div class="promo-image">
                 <img id="promo-img" src="img/product-video.png" alt="Promo Product">
             </div>
+            <div class="promo-product">
+            <div class="promo-text">
+                <h2>PROFITEZ DES PACKS DE PRODUITS</h2>
+            </div>
             <div class="swiper-slide card">
-                <div class="card-content promo-product">
-                    <div class="promo-text">
-                        <h2>PROFITEZ DES PACKS DE PRODUITS</h2>
-                    </div>
-                    <div class="image">
+                <div class="card-content">
+                    <div class="product-image">
                         <img src="img/feature-product-1%20(3).png" alt="">
                     </div>
                     <div class="product-info">
@@ -153,12 +138,13 @@
                             8 FL 02/ 736 mL<br>
                             40000 FCFA
                         </span>
-                    </div>
                     <div class="button">
                         <i class="fas fa-shopping-cart"></i>
                         <button class="button__buy">Commander</button>
                     </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -172,8 +158,8 @@
             slidesPerGroup: 4,
             loop: true,
             breakpoints: {
-                // when window width is >= 320px
-                300: {
+                // when window width is >= 375px
+                375: {
                     slidesPerView: 1,
                     spaceBetween: 30
                 },
@@ -181,13 +167,13 @@
                     slidesPerView: 2,
                     spaceBetween: 30
                 },
-                // when window width is >= px
-                750: {
+                // when window width is >= 768px
+                768: {
                     slidesPerView: 3,
                     spaceBetween: 30
                 },
-                // when window width is >= 640px
-                1066: {
+                // when window width is >= 1024px
+                1024: {
                     slidesPerView: 4,
                     spaceBetween: 40
                 }
