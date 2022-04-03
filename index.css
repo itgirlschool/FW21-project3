@@ -8,6 +8,11 @@
     src: local('Candara'),
     url(/fonts/Candara.ttf);
 }
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'),
+    url(/fonts/Montserrat.ttf);
+}
 html,
 body {
     position: relative;
@@ -19,25 +24,462 @@ body {
     padding: 0;
 }
 
+/*начало Header*/
+header{
+    background-image: url(img/hero-section.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+    
+    #navbarmenu {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr 1fr 1fr;
+        margin: 0%;
+        padding-top: 1%;
+        padding-bottom: 2%;
+        height: 10%;
+        padding-left: 2%;
+    }
+    
+    .textmenu {
+    
+        grid-row: 1/2;
+        grid-column: 2/3;
+        color: #FFFFFF;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 1%;
+    
+    }
+    
+    .iconsearch {
+    
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+    
+    .iconuser {
+    
+        grid-row: 1/2;
+        grid-column: 4/5;
+    }
+    
+    .iconshopping {
+        grid-row: 1/2;
+        grid-column: 5/6;
+    }
+    
+    #logo_main {
+        display: grid;
+        justify-items: center;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    #logo {
+        width: 20%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .scroll {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        font-family: 'Freestyle Script';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        align-items: center;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding-left: 2%;
+        }
+    
+    #linemenu1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        padding: 0%;
+        margin-bottom: 2%;
+        
+    }
+    .scroll__firstitem {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        padding: 0%;
+        margin-bottom: 2%;
+        opacity: 0.1;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+    }
+    .scroll__seconditem {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        padding: 0%;
+        margin-bottom: 2%;
+        color: #FFFFFF;
+        
+    }
+    
+    .scroll__thirditem {
+        grid-row: 4/5;
+        grid-column: 1/2;
+        padding: 0%;
+        margin-bottom: 2%;
+        color: #FFFFFF;
+        
+    }
+    
+    #linemenu2 {
+        grid-row: 5/6;
+        grid-column: 1/2;
+        padding: 0%;
+        margin-bottom: 20%;
+        
+    }
+    #text_title1 {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        left: calc(50% - 250px/2 + 435px);
+        top: calc(50% - 57.59px/2 - 1372.7px);
+        font-family: 'Freestyle Script';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 57px;
+        text-align: center;
+        color: #C4C4C4;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    #text_title2 {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        left: calc(50% - 126px/2 + 433px);
+        top: calc(50% - 26.27px/2 - 1263.07px);
+        font-family: 'Freestyle Script';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    /* Начало hamburger menu */
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 1%;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    
+    }
+    
+    #menuToggle a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    
+    }
+    
+    #menuToggle a:hover {
+        color: purple;
+    }
+    
+    
+    
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+        -webkit-touch-callout: none;
+        
+    }
+    
+    /*
+      * Just a quick hamburger
+      */
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #cdcdcd;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+            
+    }
+    
+    
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+       }
+    
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+       }
+    
+    /* 
+      * Transform all the slices of hamburger
+      * into a crossmark.
+      */
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: rgba(0, 0, 0, 0.54);
+    }
+    
+    /*
+      * But let's hide the middle one.
+      */
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+       }
+    
+    /*
+      * Ohyeah and the last one should go the other direction
+      */
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    
+    /*
+      * Make this absolute positioned
+      * at the top left of the screen
+      */
+    #menu {
+        position: absolute;
+        text-align: center;
+        width: 351px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: #ededed;
+        list-style-type: none;
+        font-family: 'Freestyle Script', "Avenir", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+    
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+    
+    /*
+      * And let's slide it in from the left
+      */
+    #menuToggle input:checked~ul {
+        transform: none;
+    }
+    
+    #minimobile {
+        display: none;
+    }
+    /*Завершение hamburger menu*/
+    
+    
+    /**для планшета**/
+    
+    @media screen and (min-width:767px) and (max-width:1023px) {
+        header{
+            background-image: url(img/hero-section-tablet.png);
+        }
+        #navbarmenu {
+            padding-bottom: 0%;
+        }
+        #logo {
+            width: 25%;
+            margin: 0%;
+            padding: 0%;
+            } 
+        .scroll {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat (8, 1fr);
+            text-align: center;
+            padding: 0%;
+            }
+        #text_title1 {
+            grid-row: 1/2;
+            grid-column: 1/2;
+            
+            }
+    
+        #linemenu1 {
+            grid-row: 2/3;
+            grid-column: 1/2;
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .scroll__firstitem {
+            grid-row: 3/4;
+            grid-column: 1/2;
+            text-align: center;
+            opacity: 1;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .scroll__seconditem {
+            grid-row: 4/5;
+            grid-column: 1/2;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .scroll__thirditem {
+            grid-row: 5/6;
+            grid-column: 1/2;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        #linemenu2 {
+            grid-row: 6/7;
+            grid-column: 1/2;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        #text_title2 {
+            grid-row: 7/8;
+            grid-column: 1/2;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        /* Начало hamburger menu */
+        /*Завершение hamburger menu*/
+    }
+    /*для телефона*/
+    @media screen and (min-width:300px) and (max-width:766px) {
+       
+        header{
+            background-image: url(img/hero-section-mobile.png);
+            }
+        #navbarmenu {
+            padding-bottom: 0%;
+           
+            }
+            .iconsearch,
+            .iconuser,
+            .iconshopping {
+                display: none;
+            }
+        #logo {
+            width: 35%;
+            } 
+        .scroll {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat (8, 1fr);
+            text-align: center;
+            padding: 0%;
+            }
+           
+         #text_title1 {
+            grid-row: 1/2;
+            grid-column: 1/2;
+            }
+    
+        #linemenu1 {
+            grid-row: 2/3;
+            grid-column: 1/2;
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .scroll__firstitem {
+            grid-row: 3/4;
+            grid-column: 1/2;
+            text-align: center;
+            opacity: 1;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .scroll__seconditem {
+            grid-row: 4/5;
+            grid-column: 1/2;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .scroll__thirditem {
+            grid-row: 5/6;
+            grid-column: 1/2;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        #linemenu2 {
+            grid-row: 6/7;
+            grid-column: 1/2;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        #text_title2 {
+            grid-row: 7/8;
+            grid-column: 1/2;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        
+        /* Начало hamburger menu */
+        
+        #menu {
+            width: 150px;
+        }
+        
+      #minimobile {
+        display: block;
+    }
+    /*Завершение hamburger menu*/
+    }
+    /*завершение для телефона*/
+    /*завершение Header*/
+
 .swiper {
     font-family: Candara, serif;
     max-width: 100%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-
 }
 .promo-text {
     display: flex;
     justify-content: center;
     align-content: center;
     font-family: "Freestyle Script", serif;
-    font-size: x-large;
+    font-size: large;
     font-weight: 200;
     text-shadow: 0px 4px 4px #f4f0ff, 0 0 1em grey;
     color: #333333;
     line-height: 56px;
-    margin: 1em;
 }
 
 .swiper-slide {
@@ -85,16 +527,198 @@ body {
     display: grid;
     grid-template-areas: "promo-image promo-product";
     justify-content: center;
-    gap: 5em;
+    gap: 1em;
 }
 .promo-product {
-    padding: 4em;
+    grid-area: promo-product;
     margin-top: 2em;
-
 }
 #promo-img {
-   max-width: 100%;
+    grid-area: promo-image;
     margin: 2em;
+}
+
+@font-face {
+    font-family: 'Freestyle Script';
+    src: local('Freestyle Script'),
+        url(/fonts/FreestyleScript.ttf);
+}
+
+@font-face {
+    font-family: 'Candara';
+    src: local('Candara'),
+        url(/fonts/Candara.ttf);
+}
+
+@media screen and (max-width: 768px) {
+    .item3 {
+        display: none;
+    }
+}
+
+.cover {
+    background: linear-gradient(180deg, #C4C4C4 23.75%, rgba(196, 196, 196, 0) 100%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cover-picture {
+    display: flex;
+    width: 40%;
+    height: 70%;
+    justify-content: flex-start;
+}
+
+.picture {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cover-text {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.cover-header {
+    font-family: 'Freestyle Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: end;
+    display: flex;
+    width: 100%;
+    height: 35%;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.cover-description {
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+.cover-button-logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40%;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.logo-button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 60%;
+    height: 20%;
+}
+
+.invitation {
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+    padding: 15px;
+}
+
+.cover-logo {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.review {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-areas: "review-header"
+        "review-text";
+    grid-template-rows: 1fr 3fr;
+}
+
+.review-header {
+    font-family: 'Freestyle Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.review1,
+.review2,
+.review3 {
+    display: flex;
+
+}
+
+.item1,
+.item2,
+.item3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #F1EFEF;
+    text-align: justify;
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.signature1,
+.signature2,
+.signature3 {
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    align-items: flex-end;
 }
 
 .footer{
@@ -242,4 +866,59 @@ padding-right: 10vh;
 .inst, .logo_contacts{
     padding-right: 18px;
     padding-top: 18px;
+}
+
+/*Стиль Header*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: .6em 0;
+    display: inline-block;
+}
+
+
+.site-navigation ul,
+.site-navigation li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+@media screen and (max-width: 1023px) and (min-width: 360px) {
+    .promo-container {
+        display: grid;
+        grid-template-areas: "promo-image"
+                                "promo-text"
+                                "promo-product";
+        justify-content: center;
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+    .promo-text {
+        grid-area: promo-text;
+    }
+    .promo-product {
+        grid-area: promo-product;
+        margin-bottom: 1em;
+    }
+    #promo-img {
+        grid-area: promo-image;
+       max-width: 90%;
+    }
+    .product-image {
+        max-width: 100%;
+    }
 }
