@@ -14,17 +14,64 @@
 
 <body>
 <!--Замени header своим-->
-<header class="site-header">
-    <div class="site-identity">
-        <h1><a href="#">Site Name</a></h1>
-    </div>
-    <nav class="site-navigation">
-        <ul class="nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+    <div id="navbarmenu">
+        <nav id="navbar">
+                     <div id="menuToggle">
+                         <input type="checkbox"/>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                       <ul id="menu">
+                         <li><img class="logo_menu" src="img/logo_menu.png" alt="Logo"></li>
+                        <a href="#"><li>VISAGE</li></a>
+                        <a href="#"><li>CORPS</li></a>
+                        <a href="#"><li>PARFUMS</li></a>
+                        <a href="#"><li>A PROPOS</li></a>
+                        <a href="#"><li>AIDE</li></a>
+                        <a href="#"><li id="minimobile">MON COMPTE</li></a>
+                        <a href="#"><li id="minimobile">PANIER</li></a>
+                        <a href="#"><li id="minimobile">RECHERCHER</li></a>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="textmenu">MENU</div>
+                  <div>
+                  <img class="iconsearch" src="img/icon_search.png" alt="iconsearch">
+                  </div>
+                  <div>
+                    <img class="iconuser" src="img/icon_user.png" alt="iconuser">
+                  </div>
+                  <div>
+                    <img class="iconshopping" src="img/icon_shopping.png" alt="iconshopping">
+                  </div>
+          
+        </div>
+          <div id="logo_main">
+            <img id="logo" class="logowhite" src="img/logo_navbar.png" alt=""></img>
+          </div>
+              <div class="scroll">
+              <div id="linemenu1">
+                <picture> 
+                  <source srcset="img/Arrow1.svg" media="(min-width:1023px)">
+                  <img srcset="img/Arrow1_long.svg">
+                </picture> 
+              </div>
+              <div class="scroll__firstitem">01  SOIN DE VISAGE</p></div>
+              <div class="scroll__seconditem">02  SOIN DE CORP</p></div>
+              <div class="scroll__thirditem">03  PARFUMS</p></div>
+              <div id="linemenu2">
+                <picture> 
+                  <picture> 
+                    <source srcset="img/Arrow2.svg" media="(min-width:1023px)">
+                    <img srcset="img/Arrow2_long.svg">
+                  </picture> 
+                </picture> 
+              </div>
+              <div id="text_title1"><p>SOIN DE VISAGE</p></div>
+              <div id="text_title2"><p>VOIR LES PRODUITS</p></div>
+            </div>
+          </div>
 </header>
     <!-- Slider -->
     <section>
