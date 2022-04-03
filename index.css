@@ -8,6 +8,11 @@
     src: local('Candara'),
     url(/fonts/Candara.ttf);
 }
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'),
+    url(/fonts/Montserrat.ttf);
+}
 html,
 body {
     position: relative;
@@ -133,7 +138,7 @@ header{
         grid-row: 5/6;
         grid-column: 1/2;
         padding: 0%;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
         
     }
     #text_title1 {
