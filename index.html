@@ -13,19 +13,88 @@
 </head>
 
 <body>
-<!--Замени header своим-->
-<header class="site-header">
-    <div class="site-identity">
-        <h1><a href="#">Site Name</a></h1>
-    </div>
-    <nav class="site-navigation">
-        <ul class="nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!--Замени header своим-->
+    <header>
+        <div id="navbarmenu">
+            <nav id="navbar">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li><img class="logo_menu" src="img/logo_menu.png" alt="Logo"></li>
+                        <a href="#">
+                            <li>VISAGE</li>
+                        </a>
+                        <a href="#">
+                            <li>CORPS</li>
+                        </a>
+                        <a href="#">
+                            <li>PARFUMS</li>
+                        </a>
+                        <a href="#">
+                            <li>A PROPOS</li>
+                        </a>
+                        <a href="#">
+                            <li>AIDE</li>
+                        </a>
+                        <a href="#">
+                            <li id="minimobile">MON COMPTE</li>
+                        </a>
+                        <a href="#">
+                            <li id="minimobile">PANIER</li>
+                        </a>
+                        <a href="#">
+                            <li id="minimobile">RECHERCHER</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <div class="textmenu">MENU</div>
+            <div>
+                <img class="iconsearch" src="img/icon_search.png" alt="iconsearch">
+            </div>
+            <div>
+                <img class="iconuser" src="img/icon_user.png" alt="iconuser">
+            </div>
+            <div>
+                <img class="iconshopping" src="img/icon_shopping.png" alt="iconshopping">
+            </div>
+
+        </div>
+        <div id="logo_main">
+            <img id="logo" class="logowhite" src="img/logo_navbar.png" alt=""></img>
+        </div>
+        <div class="scroll">
+            <div id="linemenu1">
+                <picture>
+                    <source srcset="img/Arrow1.svg" media="(min-width:1023px)">
+                    <img srcset="img/Arrow1_long.svg">
+                </picture>
+            </div>
+            <div class="scroll__firstitem">01 SOIN DE VISAGE</p>
+            </div>
+            <div class="scroll__seconditem">02 SOIN DE CORP</p>
+            </div>
+            <div class="scroll__thirditem">03 PARFUMS</p>
+            </div>
+            <div id="linemenu2">
+                <picture>
+                    <picture>
+                        <source srcset="img/Arrow2.svg" media="(min-width:1023px)">
+                        <img srcset="img/Arrow2_long.svg">
+                    </picture>
+                </picture>
+            </div>
+            <div id="text_title1">
+                <p>SOIN DE VISAGE</p>
+            </div>
+            <div id="text_title2">
+                <p>VOIR LES PRODUITS</p>
+            </div>
+        </div>
+    </header>
     <!-- Slider -->
     <section>
         <div class="swiper mySwiper">
@@ -123,28 +192,28 @@
                 <img id="promo-img" src="img/product-video.png" alt="Promo Product">
             </div>
             <div class="promo-product">
-            <div class="promo-text">
-                <h2>PROFITEZ DES PACKS DE PRODUITS</h2>
-            </div>
-            <div class="swiper-slide card">
-                <div class="card-content">
-                    <div class="product-image">
-                        <img src="img/feature-product-1%20(3).png" alt="">
-                    </div>
-                    <div class="product-info">
-                        <span class="brand">CeraVe</span>
-                        <span class="description">
-                            pack crème CeraVe<br>
-                            8 FL 02/ 736 mL<br>
-                            40000 FCFA
-                        </span>
-                    <div class="button">
-                        <i class="fas fa-shopping-cart"></i>
-                        <button class="button__buy">Commander</button>
-                    </div>
+                <div class="promo-text">
+                    <h2>PROFITEZ DES PACKS DE PRODUITS</h2>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="product-image">
+                            <img src="img/feature-product-1%20(3).png" alt="">
+                        </div>
+                        <div class="product-info">
+                            <span class="brand">CeraVe</span>
+                            <span class="description">
+                                pack crème CeraVe<br>
+                                8 FL 02/ 736 mL<br>
+                                40000 FCFA
+                            </span>
+                            <div class="button">
+                                <i class="fas fa-shopping-cart"></i>
+                                <button class="button__buy">Commander</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -189,64 +258,69 @@
     <!--Это обложка-->>
     <div class="cover">
         <div class="cover-picture">
-          <div class="picture">
-            <img src="img/thebodyshop_164148603273025-removebg-preview 1.png" alt="" style="width: 90%;">
-          </div>
+            <div class="picture">
+                <img src="img/thebodyshop_164148603273025-removebg-preview 1.png" alt="" style="width: 90%;">
+            </div>
         </div>
         <div class="cover-text">
-          <div class="cover-header">
-            <p>PARTAGER L'AMOUR</p>
-          </div>
-          <div class="cover-description">
-            <p> Envie de vous chouchouter et aussi de faire plaisir à un ami ? Parrainez un ami et il bénéficiera d’une
-              réduction de 5000 FCFA dès 20.000 FCFA d’achats en ligne. Pour vous remercier, nous vous offrirons également
-              une réduction de 5000 FCFA lors de votre prochaine commande.</p>
-          </div>
-          <div class="cover-button-logo">
-            <div class="logo-button">
-              <button class="invitation">INVITER DES AMIS</button>
+            <div class="cover-header">
+                <p>PARTAGER L'AMOUR</p>
             </div>
-            <div class="cover-logo">
-              <img src="img/logo-02 1.png" alt="" style="width: 100%;">
+            <div class="cover-description">
+                <p> Envie de vous chouchouter et aussi de faire plaisir à un ami ? Parrainez un ami et il bénéficiera
+                    d’une
+                    réduction de 5000 FCFA dès 20.000 FCFA d’achats en ligne. Pour vous remercier, nous vous offrirons
+                    également
+                    une réduction de 5000 FCFA lors de votre prochaine commande.</p>
             </div>
-          </div>
+            <div class="cover-button-logo">
+                <div class="logo-button">
+                    <button class="invitation">INVITER DES AMIS</button>
+                </div>
+                <div class="cover-logo">
+                    <img src="img/logo-02 1.png" alt="" style="width: 100%;">
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 
     <!--Это отзывы-->>
     <div class="review">
         <div class="review-header">
-          <p>LEURS AVIS</p>
+            <p>LEURS AVIS</p>
         </div>
         <div class="review-text">
-          <div class="item1">
-            <p> Bons produits, gamme de plus en plus large. Une vraie recherche sur le zéro déchet, avec le souci d'une
-              amélioration continuelle. Livraison à vélo fiable et service client très sympa et efficace. Je recommande
-              vivement.</p>
-            <div class="signature1">
-              <p>-Céline M. sur Google Avis</p>
+            <div class="item1">
+                <p> Bons produits, gamme de plus en plus large. Une vraie recherche sur le zéro déchet, avec le souci
+                    d'une
+                    amélioration continuelle. Livraison à vélo fiable et service client très sympa et efficace. Je
+                    recommande
+                    vivement.</p>
+                <div class="signature1">
+                    <p>-Céline M. sur Google Avis</p>
+                </div>
             </div>
-          </div>
-          <div class="item2">
-            <p>Enfin une option pour consommer zéro déchet en toute simplicité ! Je souhaite beaucoup de
-              succès à Guicosmetique, ça voudra dire qu'on avance dans la bonne direction ...!</p>
-            <div class="signature2">
-              <p>-Juliette J. sur Google Avis</p>
+            <div class="item2">
+                <p>Enfin une option pour consommer zéro déchet en toute simplicité ! Je souhaite beaucoup de
+                    succès à Guicosmetique, ça voudra dire qu'on avance dans la bonne direction ...!</p>
+                <div class="signature2">
+                    <p>-Juliette J. sur Google Avis</p>
+                </div>
             </div>
-          </div>
-          <div class="item3">
-            <p>Je trouvais ça vraiment trop compliqué d'acheter en vrac en magasin. Ça demandait trop
-              d'organisation à mon goût. Là, c'est beaucoup plus simple et surtout les produits sont de meilleure qualité
-              qu'en
-              supermarché, même bio. Ça a changé ma vie en quelque sorte.
-            </p>
-            <div class="signature3">
-              <p>-Alex C. sur Google Avis</p>
+            <div class="item3">
+                <p>Je trouvais ça vraiment trop compliqué d'acheter en vrac en magasin. Ça demandait trop
+                    d'organisation à mon goût. Là, c'est beaucoup plus simple et surtout les produits sont de meilleure
+                    qualité
+                    qu'en
+                    supermarché, même bio. Ça a changé ma vie en quelque sorte.
+                </p>
+                <div class="signature3">
+                    <p>-Alex C. sur Google Avis</p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      
+    </div>
+
     <!--Это футер-->>
     <footer class="footer">
         <div class="first_line">
@@ -261,33 +335,33 @@
                 <button class="button_footer"><span id="mail">Adresse mail</span></button>
             </div>
         </div>
-            <div class="second_line">
-               <div class="suivez">
-                   <p>Suivez nous sur</p>
-                   <img class="logo_contacts" src="img/logo_whatsup.png" alt="">
-                   <img class="logo_contacts" src="img/logo_fb.png" alt="">
-                   <img class="inst" src="img/logo_inst.PNG">
-                   <img class="logo_contacts" src="img/logo_twitter.png" alt="">
-                   <img class="logo_contacts" src="img/logo_1.png" alt="">
-
-               </div>
-               <div class="confidentilite">
-                   <p>Politique de confidentialité</p>
-               </div>
-               <div class="conditions">
-                   <p>Conditions d’utilisations</p>
-               </div>
-               <div class="contacts">
-                   <p>Contact</p>
-                   <p class="lang">FRANCAIS</p>
-               </div> 
-            </div>
-            <div class="third_line">
+        <div class="second_line">
+            <div class="suivez">
+                <p>Suivez nous sur</p>
+                <img class="logo_contacts" src="img/logo_whatsup.png" alt="">
+                <img class="logo_contacts" src="img/logo_fb.png" alt="">
+                <img class="inst" src="img/logo_inst.PNG">
+                <img class="logo_contacts" src="img/logo_twitter.png" alt="">
+                <img class="logo_contacts" src="img/logo_1.png" alt="">
 
             </div>
-            <div class="forth_line">
-                Copyright 2022 G & C, tous droits reservés
+            <div class="confidentilite">
+                <p>Politique de confidentialité</p>
             </div>
+            <div class="conditions">
+                <p>Conditions d’utilisations</p>
+            </div>
+            <div class="contacts">
+                <p>Contact</p>
+                <p class="lang">FRANCAIS</p>
+            </div>
+        </div>
+        <div class="third_line">
+
+        </div>
+        <div class="forth_line">
+            Copyright 2022 G & C, tous droits reservés
+        </div>
 
         </div>
         </div>
